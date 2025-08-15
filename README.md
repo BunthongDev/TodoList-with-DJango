@@ -1,79 +1,84 @@
-Django Todo List Web Application
-A clean, modern, and fully functional Todo List web application built with Django and styled with Bootstrap. This project allows users to manage their daily tasks through a simple and intuitive user interface with full CRUD (Create, Read, Update, Delete) functionality.
+# Django Todo List Web Application
 
-Features
-Create Tasks: Quickly add new tasks to your list.
+A clean, modern, and fully functional **Todo List** web application built with **Django** and styled with **Bootstrap 5**. This project allows users to manage their daily tasks through a simple and intuitive user interface with full **CRUD** (Create, Read, Update, Delete) functionality.
 
-Read Tasks: View all your tasks in a clean, ordered list.
+## ✨ Features
 
-Update Tasks:
+- **Create Tasks**: Quickly add new tasks to your list.
+- **Read Tasks**: View all your tasks in a clean, ordered list.
+- **Update Tasks**:
+  - Mark tasks as complete or incomplete with a single click.
+  - Edit the title of any existing task through a pop-up modal.
+- **Delete Tasks**: Remove tasks you no longer need.
+- **Timestamps**: Automatically display the creation date for each task.
+- **Responsive Design**: Works beautifully on desktops, tablets, and mobile devices.
 
-Mark tasks as complete or incomplete with a single click.
+## 🛠 Technology Stack
 
-Edit the title of any existing task through a pop-up modal.
+- **Backend**: Django  
+- **Frontend**: HTML, Bootstrap 5  
+- **Database**: MySQL  
+- **Programming Language**: Python  
 
-Delete Tasks: Remove tasks you no longer need.
+## 🚀 Getting Started
 
-Timestamps: Each task automatically displays its creation date.
+Follow these instructions to set up the project locally for development and testing purposes.
 
-Responsive Design: The application is fully responsive and works beautifully on desktops, tablets, and mobile devices.
+### ✅ Prerequisites
 
-Technology Stack
-Backend: Django
+Make sure you have the following installed:
 
-Frontend: HTML, Bootstrap 5
+- Python 3.8+
+- pip (Python package installer)
+- MySQL server instance
 
-Database: MySQL
+### 📥 Installation
 
-Programming Language: Python
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/TodoList-with-Django.git
+    cd TodoList-with-Django
+    ```
 
-Getting Started
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+2. **Create and activate a virtual environment**:
 
-Prerequisites
-You will need to have the following installed on your system:
+    **macOS/Linux**:
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
 
-Python 3.8+
+    **Windows**:
+    ```bash
+    python -m venv .venv
+    .\.venv\Scripts\activate
+    ```
 
-pip (Python package installer)
+3. **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-A MySQL server instance
+4. **Configure the database**:
+    - Create a new MySQL database named `todolist_db`.
+    - Open `project/settings.py`.
+    - Update the `DATABASES` dictionary with your MySQL username and password.
 
-Installation
-Clone the repository:
+5. **Run database migrations**:
+    ```bash
+    python manage.py migrate
+    ```
 
-git clone https://github.com/your-username/TodoList-with-Django.git
-cd TodoList-with-Django
+6. **Start the development server**:
+    ```bash
+    python manage.py runserver
+    ```
 
-Create and activate a virtual environment:
+7. **Access the application**:  
+   Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser.
 
-# For macOS/Linux
-python3 -m venv .venv
-source .venv/bin/activate
+---
 
-# For Windows
-python -m venv .venv
-.\.venv\Scripts\activate
+## 📄 License
 
-Install the required Python packages:
-
-pip install -r requirements.txt
-
-Configure the database:
-
-Create a new MySQL database named todolist_db.
-
-Open the project/settings.py file.
-
-Update the DATABASES dictionary with your MySQL username and password.
-
-Run the database migrations:
-This will create the necessary tables in your database.
-
-python manage.py migrate
-
-Run the development server:
-
-python manage.py runserver
-
-The application will be available at http://127.0.0.1:8000/.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
