@@ -1,0 +1,23 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Node dependencies
+node_modules/
+package-lock.json
+
+# Static files folder (if you collect them)
+staticfiles/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
